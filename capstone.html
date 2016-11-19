@@ -9,15 +9,23 @@
 	<link rel="stylesheet" type="text/css" href="capstone.css">
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			  <div class="col-md-1 col-md-offset-3 box"><h1>R</h1></div>
-			  <div class="col-md-1 col-md-offset-0 box"><h1>E</h1></div>
-			  <div class="col-md-1 col-md-offset-0 box"><h1>D</h1></div>
-			  <div class="col-md-1 col-md-offset-0 box"><h1>S</h1></div>
-			  <div class="col-md-1 col-md-offset-0 box"><h1>O</h1></div>
-			  <div class="col-md-1 col-md-offset-0 box"><h1>X</h1></div>
-		</div>
+	<div id="hint">
+		<h1 id="word">Guess The Word!</h1>
+		<h3></h3>
+		<h3></h3>
+		<h3></h3>
+	</div>	
+	<div id="wrong">	
+		<h1 id="x1">X</h1>
+		<h1 id="x2">X</h1>
+		<h1 id="x3">X</h1>	
+	</div>
+	<div align="center" id="button">
+		<button type="button" class="btn">New Word</button>
+	</div>
+	<div align="center" id="input">
+		<input type="text" class="guess" >
+		<button type="button" class="btn2">Guess!</button>
 	</div>
 </body>
 </html>
