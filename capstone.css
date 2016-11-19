@@ -1,5 +1,5 @@
 body{
-	background-color: yellow;
+	background-color: black;
 }
 
 #hint{
@@ -23,7 +23,7 @@ h3{
 }
 .btn2{
 	color: white;
-	background-color: red;
+	background-color: black;
 	border-radius: 10px;
 	border: 2px white solid;
 }
@@ -34,9 +34,15 @@ h3{
 
 .btn{
 	color: white;
-	background-color: red;
+	background-color: black;
 	border-radius: 10px;
 	border: 2px white solid;
+}
+
+button:hover{
+	background-color: white;
+	color: black;
+	border: 2px red solid;
 }
 
 #input{
@@ -44,10 +50,16 @@ h3{
 }
 
 input{
-	background-color: red;
+	background-color: black;
 	color: white;
 	border-radius: 10px;
 	border: 2px white solid;
+}
+
+input:hover{
+	background-color: white;
+	color: black;
+	border: 2px red solid;
 }
 
 #wrong{

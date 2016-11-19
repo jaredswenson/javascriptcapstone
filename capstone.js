@@ -2,8 +2,7 @@ $(document).ready(function () {
 	var wordarray = ['fossil', 'gritty', 'dragon', 'alliance', 'kangaroo', 'evidence'];
 	var randomNumber = 0;
 	$('.btn').on('click', function () {
-		$('#word').text('Guess The Word!')
-		$('.guess').val('');
+		$('#word').text('Guess The Word!');
 		randomNumber = Math.floor((Math.random() * wordarray.length));
 		$.ajax({   
 			url: "https://wordsapiv1.p.mashape.com/words/"+wordarray[randomNumber]+"/definitions",
