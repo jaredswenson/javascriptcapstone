@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var wordarray = ['revenge', 'legion', 'dragon', 'caribou', 'kangaroo', 'ninja'];
+	var wordarray = ['barren', 'legion', 'dragon', 'win', 'kangaroo', 'ninja'];
 	var randomNumber = 0;
 	$('.btn').on('click', function () {
 		$('#word').text('Guess The Word!');
@@ -31,7 +31,7 @@ $(document).ready(function () {
 		this.misses = 0;
 		this.wordcheck = function () {
 			if ($('.guess').val() == wordarray[randomNumber]) {
-				$('#word').text("You Got It!");
+				$('#word').text("You Got It! " + wordarray[randomNumber]);
 				$('#word').css('color', 'green');
 			} else {
 				this.misses += 1; 

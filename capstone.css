@@ -63,6 +63,18 @@ input:hover{
 	border: 2px red solid;
 }
 
+.strike{
+	color: white;
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+
+}
+
+.strike h4{
+	text-align: center;
+}
+
 #wrong{
 	width: 90%;
 	height: 100px;
