@@ -3,6 +3,10 @@ $(document).ready(function () {
 	var randomNumber = 0;
 	$('.btn').on('click', function () {
 		$('#word').text('Guess The Word!');
+		$('#word').css('color', 'white');
+		$('#x1').hide();
+		$('#x2').hide();
+		$('#x3').hide();
 		randomNumber = Math.floor((Math.random() * wordarray.length));
 		$.ajax({   
 			url: "https://wordsapiv1.p.mashape.com/words/"+wordarray[randomNumber]+"/definitions",
@@ -39,10 +43,10 @@ $(document).ready(function () {
 					$('#x3').show();
 					$('#word').text(wordarray[randomNumber]);
 					$('#word').css('color', 'red');
-				}
+				}	
 			} 
 		} 
-	};//end game
+	};//end CheckAnswer
 
 	var game = new CheckAnswer();
 

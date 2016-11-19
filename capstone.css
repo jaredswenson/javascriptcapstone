@@ -14,6 +14,7 @@ body{
 #word{
 	text-align: center;
 	color: white;
+	text-decoration: underline; 
 }
 
 h3{
