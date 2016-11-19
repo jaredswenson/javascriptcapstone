@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var wordarray = ['fossil', 'gritty', 'dragon', 'alliance', 'kangaroo', 'evidence'];
+	var wordarray = ['revenge', 'legion', 'dragon', 'caribou', 'kangaroo', 'ninja'];
 	var randomNumber = 0;
 	$('.btn').on('click', function () {
 		$('#word').text('Guess The Word!');
