@@ -3,6 +3,7 @@ $(document).ready(function () {
 	var randomNumber = 0;
 	$('.btn').on('click', function () {
 		$('#word').text('Guess The Word!')
+		$('.guess').val('');
 		randomNumber = Math.floor((Math.random() * wordarray.length));
 		$.ajax({   
 			url: "https://wordsapiv1.p.mashape.com/words/"+wordarray[randomNumber]+"/definitions",
@@ -23,17 +24,28 @@ $(document).ready(function () {
 		});//end ajax
 	});//end on 
 
-	function Game() {
+	function CheckAnswer() {
+		this.misses = 0;
 		this.wordcheck = function () {
 			if ($('.guess').val() == wordarray[randomNumber]) {
 				$('#word').text("You Got It!");
+				$('#word').css('color', 'green');
 			} else {
-				$('#x1').show()
+				this.misses += 1; 
+				if (this.misses === 1) {
+					$('#x1').show();
+				} else if(this.misses === 2){
+					$('#x2').show();
+				} else if (this.misses === 3){
+					$('#x3').show();
+					$('#word').text(wordarray[randomNumber]);
+					$('#word').css('color', 'red');
+				}
 			} 
 		} 
 	};//end game
 
-	var game = new Game();
+	var game = new CheckAnswer();
 
 	$('.btn2').on('click', function () {
 		game.wordcheck();
