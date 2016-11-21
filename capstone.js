@@ -7,6 +7,7 @@ $(document).ready(function () {
 		$('#x1').hide();
 		$('#x2').hide();
 		$('#x3').hide();
+		game.misses = 0;
 		randomNumber = Math.floor((Math.random() * wordarray.length));
 		$.ajax({   
 			url: "https://wordsapiv1.p.mashape.com/words/"+wordarray[randomNumber]+"/definitions",
