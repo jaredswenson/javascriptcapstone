@@ -81,7 +81,7 @@ input:hover{
 	background-color: black;
 	margin: 0 auto;
 	display: flex;
-		border-radius: 10px;
+	border-radius: 10px;
 	border: 2px white solid;
 }
 
@@ -90,5 +90,4 @@ input:hover{
 	font-size: 90px;
 	text-align: center;
 	color: red;
-	display: none;
 }
